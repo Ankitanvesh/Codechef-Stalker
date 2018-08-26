@@ -32,6 +32,7 @@ if(req.status_code==200):
     print("The codechef rating of the user is %s"%(rating))
     print("Global ranking of user is %s"%(ranking[0].text.strip()))
     print("Country ranking of user is %s"%(ranking[1].text.strip()))
+    print("The motto of the user is   ")
     for i in range(2,len(label)-1):
         cl=label[i].text.strip()
         cs=span[i+3].text.strip()
